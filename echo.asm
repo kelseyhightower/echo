@@ -34,7 +34,7 @@ _start:          ; The entrypoint for the linker.
   sub edi,ebp    ; store the length of the string.
 
 
-  ; Print the the frist positional argument to stdout.
+  ; Print the first positional argument to stdout.
   mov edx,edi   ; set third argument to computed length of argv[1].
   mov ecx,ebx   ; set second argument to string argv[1].
   mov ebx,1     ; set first argument to stdout file handle.
