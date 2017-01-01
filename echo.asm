@@ -14,10 +14,10 @@ section .text
 
 _start:          ; The entrypoint for the linker.
 
-  ; Get the frist positional argument. The results will be stored in EBX.
+  ; Get the first positional argument. The results will be stored in EBX.
   pop ebx        ; store the number of program arguments in the EBX general register.
   pop ebx        ; overwrite EBX with the program name argv[0].
-  pop ebx        ; overwrite EBX with the frist positional argument argv[1].
+  pop ebx        ; overwrite EBX with the first positional argument argv[1].
 
 
   ; Compute the length of argv[1]. The results will be stored in EDI
